@@ -2,7 +2,7 @@
 RT-Sort: an action potential propagation-based algorithm for real time spike detection and sorting with millisecond latencies
 
 ## Source code organization
-This repository contains all of the code used in the development of RT-Sort and used to create the figures in the RT-Sort manuscript. The source code is divided into 3 main folders. The folders and some highlighted scripts are described below: 
+This repository contains all of the code used in the development of RT-Sort and used to create the figures in the RT-Sort publication. The source code is divided into 3 main folders. The folders and some highlighted scripts are described below: 
 1. ```spike_detection```: Training and validating the DL models used for spike detection.
     - ```spikesort_matlab4.py```: Spike sort (with Kilosort2) and curate recordings used for training and validating the DL model 
     - ```train/single_mea.ipynb``` and ```train/single_neuropixels.ipynb```: The core training and validating of the MEA and Neuropixels models, respectively.
@@ -36,6 +36,12 @@ If that does not work, install the following Python libraries (ideally with the 
 ## Running source code
 Many scripts act as modules for other scripts. For the scripts in ```src/spike_detection```, ```src``` used in import statements refers to the folder ```src/spike_detection```. For the scripts in ```src/spike_sorting```, ```src``` used in import statements refers to the folder ```src/spike_sorting```.
 
+## Terminology discrepancies
+There are some discrepancies in the terminology used in the source code and the RT-Sort publication. The following are the most notable:
+- Variations of propagation signal, such as ```prop_signal```, refer to the RT-Sort algorithm.
+- ```latencies``` and ```delays``` in the source code refer to "time intervals" and  "latencies" in the RT-Sort publication, respectively.
+- ```clusters``` may refer to "preliminary propagation sequences" depending on the context.
+- ```SI``` or ```si``` refer to Neuropixels.
 
 ## Correspondence
 Tjitse van der Molen: tjitse@ucsb.edu<br>
