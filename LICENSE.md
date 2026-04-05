@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 Max Lim
+Copyright (c) 2024 Tjitse van der Molen, Max Lim
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
